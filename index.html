@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place all CSS for header in this file -->
+    <link href="css\header.css" rel='stylesheet' type='text/css'>
+
+    <!-- Place all CSS for the rest of the elements in this file -->
+    <link href="css\index.css" rel='stylesheet' type='text/css'>
+
+	<!-- Place all CSS for fonts in this file -->
+    <link href="css\font.css" rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.7.0\css\font-awesome.css" rel='stylesheet' type='text/css'>
+
+
+
+</head>
+<body>
+    <div id="main-container-div">
+
+        <div class="header">
+
+        	<!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+          <div class="logo">
+            <p style="font-family: 'Satisfy', cursive; color: blue; font-size: 45px;">Scribbler</p>
+            <p style="font-family: 'Marck Script', cursive;">Explore, Imagine, Create<p>
+          </div>
+
+          <div class="buttons">
+            <button value="Sign In" class="blueButton" id="signIn">Sign In</button>
+            <button value="Sign Up" class="blueButton" id="signUp">Sign Up</button>
+          </div>
+        </div>
+
+        <div class="postButtons">
+
+        	<!-- Insert code for All Posts & Create Post button here -->
+          <button value="All Posts" id="allPost" class="yellowButton">All Posts</button>
+          <button value="Create Post" id="createPost" class="yellowButton">Create Post</button>
+
+        </div>
+    </div>
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="signIn" style="display: none;">
+
+    	<!-- Insert code for Sign In modal here -->
+      <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form>
+      <div class="form-group">
+        <h4 style="position: relative; left: 35%;">Welcome Back!</h4>
+        <hr style="position: relative;
+            top: 10px;
+            border: none;
+            height: 1px;
+            background: black;
+            margin-bottom: 50px; "/>
+      </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><b>Username</b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>Password</b></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+  </div>
+  <button type="submit" class="greenButton">Sign In</button>
+  <div class="form-group">
+  </div>
+  <div class="form-group">
+  <b><label style="position: relative;left: 25%;">Not a member? <label style="color: blue;" id="anchorToSignUp"> Sign Up</label></label></b>
+</div>
+</form>
+
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="signUp" style="display: none;">
+
+      <!-- Insert code for Sign In modal here -->
+      <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+
+  <div class="modal-content">
+    <span id="closeUp" class="close">&times;</span>
+    <form>
+      <div class="form-group">
+        <h4 style="position: relative; left: 35%;">Get Started</h4>
+        <hr style="position: relative;
+            top: 10px;
+            border: none;
+            height: 1px;
+            background: black;
+            margin-bottom: 50px; "/>
+      </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><b>Full Name</b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Full Name" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1"><b>Username</b></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Username" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>Password</b></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Password" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1"><b>Confirm Password</b></label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password" required>
+  </div>
+  <div class="form-group">
+  </div>
+  <button type="submit" class="greenButton">Sign Up</button>
+  <div class="form-group">
+  </div>
+</form>
+  </div>
+
+  </div>
+
+    </div>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="createPost" style="display: none; width: 100%;">
+
+      <!-- Insert code for Sign In modal here -->
+      <div id="myModal" class="modal">
+    <div class="postModal">
+      <span class="close" id="closePost">&times;</span>
+      <form>
+        <div class="form-group">
+          <h4 style="position: relative; left: 35%;">Pen Your Post</h4>
+        </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1"><b>Title</b></label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea2"><b>Content</b></label>
+        <textarea class="form-control" id="exampleFormControlTextarea2" rows="15" style="width: 100%;"></textarea>
+      </div>
+    <button class="postGreen">Create</button>
+  </form>
+
+    </div>
+  </div>
+</div>
+
+<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+	<!-- Place all Javascript for header in this file -->
+	<script src="js\header.js"></script>
+	<!-- Place all Javascript for rest of the elements in this file -->
+    <script src="js\index.js"></script>
+
+</body>
+</html>

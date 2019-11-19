@@ -1,0 +1,64 @@
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.blogText {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding-left: 2%;
+     padding-right: 2%;
+}
+.blogAuthor {
+    padding: 0px 0px 0px 10px;
+    font-family: 'Niconne', cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.blogContent{
+
+}
+.likeText{
+  font-family: 'Roboto Mono', monospace;
+  padding-left: 2%;
+}
+/* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+.edit{
+  color: white;
+  width: 80px;
+  height: 35px;
+  border: none;
+  box-shadow: 0 10px 10px -5px #f05d8c;
+  background-color: #e83c73;
+  margin-right: 1.5%;
+  cursor: pointer;
+}
+.edit i{
+
+  padding-left: 2px;
+
+}
+.commentSyling{
+  position: relative;
+  height: 60px;
+  width: 1300px;
+  background-color: white;
+  padding-top: 40px;
+  padding-left: 10px;
+}
+.divStyle{
+  background-color: #dedede;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 20px;
+  margin-left: 2%;
+  padding-left: 1%;
+}
+.edit:active
+{
+  transform: translate(0,2px);
+}
